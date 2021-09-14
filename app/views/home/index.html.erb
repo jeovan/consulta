@@ -1,0 +1,9 @@
+<% content_for :titulo do%>
+  CONSULTAR NOTA FISCAL
+<%end%>
+
+
+<%= form_with model: @task do |f| %>
+  <%= f.text_field :name, autocomplete: false, autofocus: true %>
+  <%= f.submit %>
+<% end %>
